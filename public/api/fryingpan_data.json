@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "src": "A.jpg",
+      "title": "20厘米易潔煎鍋",
+      "price": "HK$289",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    },
+    {
+      "src": "B.jpg",
+      "title": "22厘米韓版深煎鍋連蓋",
+      "price": "HK$429",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    },
+    {
+      "src": "C.jpg",
+      "title": "24厘米易潔深煎鍋",
+      "price": "HK$259",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    },
+    {
+      "src": "D.jpg",
+      "title": "26厘米易潔深煎鍋",
+      "price": "HK$159",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    },
+    {
+      "src": "E.jpg",
+      "title": "27厘米高效抗刮易潔深煎鍋",
+      "price": "HK$549",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    },
+    {
+      "src": "F.jpg",
+      "title": "28厘米易潔深煎鍋",
+      "price": "HK$309",
+      "description": "耐用耐磨, 容易清潔. 持有長者咭可享85折"
+    }
+  ]
+}
