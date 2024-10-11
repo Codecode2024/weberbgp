@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
-import VideoSection from "./videosection";
+import VideoSection from "./Videosection";
 import HotSellProducts from "./HotSellProducts";
 import ProductCategories from "./ProductCategories";
 
