@@ -1,94 +1,185 @@
-"use client";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
-
+import styles from "./header.module.css";
 const Header = () => {
   return (
-    <Navbar
-      data-bs-theme="dark"
-      expand="lg"
-      className="bg-body-tertiary fixed-top"
-    >
-      <Container>
-        <Navbar.Brand>
-          <Link className="nav-link" href="/">
-            美亞廚具-旗艦店
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Link className="nav-link" href="/">
-              Home
+    <>
+      <section>
+        <nav className={`navbar navbar-expand-lg fixed-top ${styles.header}`}>
+          <div className="container">
+            <Link
+              className={`navbar-brand fw-bold fs-2 ${styles.link_text}`}
+              href="/"
+            >
+              MEYER
             </Link>
-            <Link className="nav-link" href="#link">
-              Link
-            </Link>
-            <NavDropdown title="優質煎炒鍋" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/products">
-                  新品上架
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/fryingpan">
-                  煎鍋
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/wok">
-                  炒鍋
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="#">
-                  煎炒鍋皆宜
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="#">
-                  明火爐鍋
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="#">
-                  電磁爐鍋
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="#">
-                  明火爐及電磁爐鍋皆宜
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="關於美亞" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/about">
-                  關於美亞
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/location">
-                  旗艦店位置
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="nav-link" href="/distribution">
-                  分銷店位置
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Link className="nav-link" href="/contact">
-              聯絡我們
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <Link
+                    className={`nav-link active fs-5 ${styles.link_text}`}
+                    aria-current="page"
+                    href="/"
+                  >
+                    主頁
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className={`nav-link fs-5 ${styles.link_text}`}
+                    href="/blogpost"
+                  >
+                    小技巧
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className={`nav-link fs-5 ${styles.link_text}`}
+                    href="/recentnews"
+                  >
+                    最新資訊
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
+                    className={`nav-link fs-5 ${styles.link_text}`}
+                    href="/maintenance"
+                  >
+                    保養條款
+                  </Link>
+                </li>
+                <li className="nav-item dropdown">
+                  <Link
+                    className={`nav-link fs-5 dropdown-toggle ${styles.link_text}`}
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    優質煎炒鍋
+                  </Link>
+                  <ul className={`dropdown-menu ${styles.dropdown_background}`}>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/products"
+                      >
+                        新品上架
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/fryingpan"
+                      >
+                        煎鍋
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/wok"
+                      >
+                        炒鍋
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/new"
+                      >
+                        洗碗碟機適用系列
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="#"
+                      >
+                        明火爐鍋
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="#"
+                      >
+                        電磁爐鍋
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="#"
+                      >
+                        明火爐及電磁爐鍋皆宜
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item dropdown">
+                  <Link
+                    className={`nav-link fs-5 dropdown-toggle ${styles.link_text}`}
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    關於我們
+                  </Link>
+                  <ul className={`dropdown-menu ${styles.dropdown_background}`}>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/about"
+                      >
+                        關於美亞
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/location"
+                      >
+                        旗艦店位置
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`nav-link fs-5 ${styles.link_text}`}
+                        href="/distribution"
+                      >
+                        分銷店位置
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className={`nav-link fs-5 ${styles.link_text}`}
+                    href="/contact"
+                  >
+                    聯絡我們
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </>
   );
 };
 

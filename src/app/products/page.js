@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Products from "../components/Products";
+import styles from "../products/products.module.css";
 const CategoryPage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -21,7 +22,11 @@ const CategoryPage = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-6 fw-normal text-body-emphasis">新品上架</h1>
+            <h1
+              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+            >
+              新品上架
+            </h1>
             <p className="text-danger pt-2">產品眾多，不能盡錄</p>
             <Products products={products} />
           </div>

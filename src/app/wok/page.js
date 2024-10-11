@@ -1,4 +1,5 @@
 "use client";
+import styles from "../wok/wok.module.css";
 
 import { useEffect, useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,14 +34,18 @@ const WokPage = () => {
     <div className="container-xxl py-5">
       <div className="container">
         <div className="p-3 pb-md-4 mx-auto text-center">
-          <h1 className="display-6 fw-normal text-body-emphasis">炒鍋</h1>
+          <h1
+            className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+          >
+            炒鍋
+          </h1>
           <div className="container overflow-hidden">
             <div className="row gy-5">
               <div className="mb-3">
                 {categories.map((category) => (
                   <button
                     key={category}
-                    className="btn btn-outline-primary me-2 my-2"
+                    className="btn btn-outline-light me-2 my-2"
                     onClick={() => filterProducts(category)}
                   >
                     {category}

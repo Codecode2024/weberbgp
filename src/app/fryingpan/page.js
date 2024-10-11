@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import styles from "../fryingpan/fryingpan.module.css";
 import React, { useEffect, useState, useRef } from "react";
 
 const FryingPan = () => {
@@ -27,7 +28,11 @@ const FryingPan = () => {
     <div className="container-xxl py-5">
       <div className="container">
         <div className="p-3 pb-md-4 mx-auto text-center">
-          <h1 className="display-6 fw-normal text-body-emphasis">煎鍋</h1>
+          <h1
+            className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+          >
+            煎鍋
+          </h1>
           <div className="container overflow-hidden">
             <div className="row gy-5">
               <div

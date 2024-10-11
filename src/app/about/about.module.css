@@ -1,0 +1,10 @@
+.headerTitle {
+  margin-top: 30px;
+  color: white !important;
+}
+
+.imageConfig {
+  width: 100%;
+  opacity: 0.8;
+  padding: 10px;
+}

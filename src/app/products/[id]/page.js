@@ -25,7 +25,9 @@ const ProductDetail = ({ params }) => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="p-3 pb-md-4 m-auto text-center">
-            <h1 className="display-6 fw-normal text-body-emphasis">產品詳情</h1>
+            <h1 className="display-6 fw-normal text-body-emphasis pt-4">
+              產品詳情
+            </h1>
             <div className="card mt-5 mb-5 m-auto" style={{ maxWidth: 940 }}>
               <div className="row g-0">
                 <div className="col-md-4">

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "hotProductImage": "card-image-1.jpg",
+    "description": "廚具4件裝 (炒匙漏杓鑊鏟湯杓)"
+  },
+  {
+    "id": 2,
+    "hotProductImage": "card-image-2.jpg",
+    "description": "20厘米易潔深煎鍋"
+  },
+  {
+    "id": 3,
+    "hotProductImage": "card-image-3.jpg",
+    "description": "22厘米韓版深煎鍋連蓋"
+  },
+  {
+    "id": 4,
+    "hotProductImage": "card-image-4.jpg",
+    "description": "冰鑄不銹鋼20cm廚師刀"
+  },
+  {
+    "id": 5,
+    "hotProductImage": "card-image-5.jpg",
+    "description": "不銹鋼多士爐"
+  },
+  {
+    "id": 6,
+    "hotProductImage": "card-image-6.jpg",
+    "description": "球釜電飯煲 (1升)"
+  }
+]

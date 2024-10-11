@@ -1,0 +1,16 @@
+.header {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 7, 7, 1) 0%,
+    rgba(76, 76, 76, 1) 35%,
+    rgba(134, 134, 134, 1) 100%
+  ) !important;  
+}
+
+.link_text {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.dropdown_background {
+  background: #8d8d8d !important;
+}

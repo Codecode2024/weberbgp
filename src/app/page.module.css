@@ -1,3 +1,66 @@
-.section {
-  padding: 100px 0;
+.heroContainer {
+  background: linear-gradient(
+    to right,
+    var(--brightColor),
+    var(--backgroundColor)
+  );
+  padding: 2rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem; /* Adjust for Bootstrap's responsive design */
+  color: transparent;
+  padding-top: 150px;
+  background: linear-gradient(
+    to right,
+    #ffa500,
+    #ffc107
+  ); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem; /* Adjust for Bootstrap's responsive design */
+  color: #ffc107; /* Adjust color as needed */
+}
+
+.heroBtn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border-style: none;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  background: linear-gradient(
+    90deg,
+    rgba(199, 210, 254, 1) 0%,
+    rgba(254, 215, 170, 1) 35%,
+    rgba(251, 207, 232, 1) 100%
+  );
+}
+
+.heroBtn:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.hotProducts {
+  text-align: center;
+  font-size: 3rem; /* Adjust for Bootstrap's responsive design */
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(
+    to right,
+    rgba(199, 210, 254, 1) 0%,
+    rgba(254, 215, 170, 1) 35%,
+    rgba(251, 207, 232, 1) 100%
+  ); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hotProductDesc {
+  font-size: 19px;
+  color: #cbd5e1;
 }

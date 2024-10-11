@@ -14,7 +14,11 @@ const Contact = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-6 fw-normal text-body-emphasis">聯絡我們</h1>
+            <h1
+              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+            >
+              聯絡我們
+            </h1>
           </div>
           <section className="bg-light py-3 py-md-5">
             <div className="container">

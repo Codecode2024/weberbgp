@@ -9,7 +9,9 @@ const Location = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-6 fw-normal text-body-emphasis">
+            <h1
+              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+            >
               美亞廚具旗艦店位置
             </h1>
           </div>
@@ -33,9 +35,7 @@ const Location = () => {
           <div className="row g-5 mt-4">
             <div className="col-lg-12">
               <div className="p-3 pb-md-4 mx-auto text-center">
-                <h1 className="display-6 fw-normal text-body-emphasis">
-                  前往方法
-                </h1>
+                <h1 className="display-6 fw-normal text-light">前往方法</h1>
               </div>
               <Accordion>
                 <Accordion.Item eventKey="0">
