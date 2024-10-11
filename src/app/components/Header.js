@@ -1,10 +1,24 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import styles from "./header.module.css";
+
 const Header = () => {
+  const handleNavLinkClick = () => {
+    const navbarCollapse = document.querySelector("#navbarNavDropdown");
+    if (navbarCollapse && window.bootstrap) {
+      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse);
+      if (navbarCollapse.classList.contains("show")) {
+        bsCollapse.hide();
+      }
+    } else {
+      console.error("Bootstrap is not loaded or navbarCollapse is undefined.");
+    }
+  };
   return (
     <>
       <section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <nav className={`navbar navbar-expand-lg fixed-top ${styles.header}`}>
           <div className="container">
             <Link
@@ -31,6 +45,7 @@ const Header = () => {
                     className={`nav-link active fs-5 ${styles.link_text}`}
                     aria-current="page"
                     href="/"
+                    onClick={handleNavLinkClick}
                   >
                     主頁
                   </Link>
@@ -39,6 +54,7 @@ const Header = () => {
                   <Link
                     className={`nav-link fs-5 ${styles.link_text}`}
                     href="/blogpost"
+                    onClick={handleNavLinkClick}
                   >
                     小技巧
                   </Link>
@@ -47,6 +63,7 @@ const Header = () => {
                   <Link
                     className={`nav-link fs-5 ${styles.link_text}`}
                     href="/recentnews"
+                    onClick={handleNavLinkClick}
                   >
                     最新資訊
                   </Link>
@@ -56,6 +73,7 @@ const Header = () => {
                   <Link
                     className={`nav-link fs-5 ${styles.link_text}`}
                     href="/maintenance"
+                    onClick={handleNavLinkClick}
                   >
                     保養條款
                   </Link>
@@ -75,6 +93,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/products"
+                        onClick={handleNavLinkClick}
                       >
                         新品上架
                       </Link>
@@ -83,6 +102,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/fryingpan"
+                        onClick={handleNavLinkClick}
                       >
                         煎鍋
                       </Link>
@@ -91,6 +111,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/wok"
+                        onClick={handleNavLinkClick}
                       >
                         炒鍋
                       </Link>
@@ -99,6 +120,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/new"
+                        onClick={handleNavLinkClick}
                       >
                         洗碗碟機適用系列
                       </Link>
@@ -107,6 +129,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="#"
+                        onClick={handleNavLinkClick}
                       >
                         明火爐鍋
                       </Link>
@@ -115,6 +138,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="#"
+                        onClick={handleNavLinkClick}
                       >
                         電磁爐鍋
                       </Link>
@@ -123,6 +147,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="#"
+                        onClick={handleNavLinkClick}
                       >
                         明火爐及電磁爐鍋皆宜
                       </Link>
@@ -144,6 +169,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/about"
+                        onClick={handleNavLinkClick}
                       >
                         關於美亞
                       </Link>
@@ -152,6 +178,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/location"
+                        onClick={handleNavLinkClick}
                       >
                         旗艦店位置
                       </Link>
@@ -160,6 +187,7 @@ const Header = () => {
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
                         href="/distribution"
+                        onClick={handleNavLinkClick}
                       >
                         分銷店位置
                       </Link>
@@ -170,6 +198,7 @@ const Header = () => {
                   <Link
                     className={`nav-link fs-5 ${styles.link_text}`}
                     href="/contact"
+                    onClick={handleNavLinkClick}
                   >
                     聯絡我們
                   </Link>
