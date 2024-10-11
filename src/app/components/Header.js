@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./header.module.css";
+import Script from "next/script";
 
 const Header = () => {
   const handleNavLinkClick = () => {
@@ -18,7 +19,10 @@ const Header = () => {
   return (
     <>
       <section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          strategy="lazyOnload"
+        ></Script>
         <nav className={`navbar navbar-expand-lg fixed-top ${styles.header}`}>
           <div className="container">
             <Link

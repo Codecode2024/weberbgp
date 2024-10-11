@@ -1,8 +1,7 @@
 "use client";
 import styles from "../wok/wok.module.css";
-
+import Image from "next/image";
 import { useEffect, useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 const WokPage = () => {
   const [products, setProducts] = useState([]);
@@ -60,10 +59,12 @@ const WokPage = () => {
                   key={product.src}
                 >
                   <div className="card">
-                    <img
+                    <Image
                       src={`/images/wok/${product.src}`}
-                      className="card-img-top"
+                      className="card-img-top img-fluid"
                       alt={product.title}
+                      width={500}
+                      height={300}
                     />
                     <div className="card-body">
                       <h5 className="card-title">{product.title}</h5>
