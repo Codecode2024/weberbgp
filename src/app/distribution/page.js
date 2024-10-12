@@ -1,8 +1,24 @@
 "use client";
 import React from "react";
-import styles from "../distribution/distribution.module.css";
+
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const Loading = dynamic(() => import("./loading"));
 
 const ProductDistribution = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div>
       <div className="container-xxl py-5">
