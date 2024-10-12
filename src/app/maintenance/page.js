@@ -18,14 +18,14 @@ const MaintenancePage = () => {
     }
   };
   return (
-    <div style={{ padding: "50px 100px" }}>
+    <div style={{ padding: "50px 0" }}>
       <InfiniteScroll
         dataLength={loop.length}
         next={fetchMoreData}
         hasMore={hasMore}
         loader={<h2 style={{ color: "white" }}>載入中...</h2>}
         endMessage={
-          <div>
+          <div style={{ textAlign: "center" }}>
             <h2 style={{ fontSize: "46px", color: "white" }}>唔好再碌啦!~</h2>
           </div>
         }
