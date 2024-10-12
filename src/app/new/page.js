@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import imgA from "../../../public/images/dishwasher/dashwasher_01.jpg";
 import imgB from "../../../public/images/dishwasher/dashwasher_02.jpg";
@@ -12,6 +12,28 @@ import imgH from "../../../public/images/dishwasher/dashwasher_08.jpg";
 import imgI from "../../../public/images/dishwasher/dashwasher_09.jpg";
 
 const ProductPage = () => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const carousel = document.querySelector("#demo");
+      if (carousel) {
+        const next = carousel.querySelector(
+          ".carousel-item.active"
+        ).nextElementSibling;
+        if (next) {
+          next.classList.add("active");
+          const current = carousel.querySelector(".carousel-item.active");
+          current.classList.remove("active");
+        } else {
+          const firstItem = carousel.querySelector(".carousel-item");
+          const current = carousel.querySelector(".carousel-item.active");
+          current.classList.remove("active");
+          firstItem.classList.add("active");
+        }
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const [selectedSize, setSelectedSize] = useState("S");
   const [selectedPrice, setSelectedPrice] = useState(
     "BOSCH洗碗機擁有歐系品牌少見的中式碗籃設計，能輕鬆放入台灣人習慣使用的飯碗。可調整的支架設計與碗籃高度調整系統Rackmatic，可作各種彈性組合，可輕鬆放入碗公、炒鍋、湯鍋等大型鍋具，連刀具、砧板也可輕鬆置入，餐後請將所有餐具都交給洗碗機處理吧！"
@@ -193,88 +215,6 @@ const ProductPage = () => {
               </div>
             </div>
           </div>
-
-          {/* <div
-            id="carouselExampleIndicators"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <Image
-                  src={imgA}
-                  className="d-block w-100 img-fluid"
-                  alt="..."
-                  width={600}
-                  height={400}
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src={imgB}
-                  className="d-block w-100"
-                  alt="..."
-                  width={600}
-                  height={400}
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src={imgC}
-                  className="d-block w-100"
-                  alt="..."
-                  width={600}
-                  height={300}
-                />
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div> */}
         </div>
       </section>
     </>
