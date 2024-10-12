@@ -28,6 +28,7 @@ const Header = () => {
             <Link
               className={`navbar-brand fw-bold fs-2 ${styles.link_text}`}
               href="/"
+              onClick={handleNavLinkClick}
             >
               MEYER
             </Link>
