@@ -6,6 +6,8 @@
 
 .imageConfig {
   width: 100%;
+  height: auto;
   opacity: 0.8;
-  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 15px;
 }

@@ -1,22 +1,23 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import stlyes from "./inductionCookerWok.module.css";
+import styles from "./inductionCookerWok.module.css";
 
 const Product = ({ name, price, description, imageUrl }) => {
   return (
     <div className="col-md-4 mb-4">
-      <div className={`${stlyes.card} h-100`}>
+      <div className={`${styles.card} h-100`}>
         <Image
           src={imageUrl}
           alt={name}
-          className={`card-img-top img-fluid ${stlyes.imgTop}`}
+          className={`card-img-top img-fluid ${styles.imgTop}`}
           width={300}
           height={200}
         />
         <div className="card-body">
-          <h2 className={stlyes.title}>{name}</h2>
-          <p className={stlyes.desc}>{description}</p>
-          <p className={stlyes.setPrice}>{price}</p>
+          <h2 className={styles.title}>{name}</h2>
+          <p className={styles.desc}>{description}</p>
+          <p className={styles.setPrice}>{price}</p>
         </div>
       </div>
     </div>
@@ -74,7 +75,7 @@ const App = () => {
         <div className="container">
           <div className="p-3 pb-md-4 mx-auto text-center">
             <h1
-              className={`display-6 fw-normal text-body-emphasis ${stlyes.section}`}
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
             >
               電磁爐鍋
             </h1>
