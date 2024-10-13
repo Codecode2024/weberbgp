@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Products from "../components/Products";
-import styles from "../products/products.module.css";
+import styles from "./products.module.css";
 const CategoryPage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -18,12 +18,12 @@ const CategoryPage = () => {
     fetchData();
   }, []);
   return (
-    <div>
+    <>
       <div className="container-xxl py-5">
         <div className="container">
           <div className="p-3 pb-md-4 mx-auto text-center">
             <h1
-              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
             >
               新品上架
             </h1>
@@ -32,7 +32,7 @@ const CategoryPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default CategoryPage;

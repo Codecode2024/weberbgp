@@ -8,21 +8,17 @@
 }
 
 .heroTitle {
-  font-size: 2.5rem; /* Adjust for Bootstrap's responsive design */
+  font-size: 2.5rem;
   color: transparent;
   padding-top: 150px;
-  background: linear-gradient(
-    to right,
-    #ffa500,
-    #ffc107
-  ); /* Adjust colors as needed */
+  background: linear-gradient(to right, #ffa500, #ffc107);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem; /* Adjust for Bootstrap's responsive design */
-  color: #ffc107; /* Adjust color as needed */
+  font-size: 1.5rem;
+  color: #ffc107;
 }
 
 .heroBtn {
@@ -46,7 +42,7 @@
 
 .hotProducts {
   text-align: center;
-  font-size: 3rem; /* Adjust for Bootstrap's responsive design */
+  font-size: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   background: linear-gradient(
@@ -54,7 +50,7 @@
     rgba(199, 210, 254, 1) 0%,
     rgba(254, 215, 170, 1) 35%,
     rgba(251, 207, 232, 1) 100%
-  ); /* Adjust colors as needed */
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -63,4 +59,20 @@
 .hotProductDesc {
   font-size: 19px;
   color: #cbd5e1;
+}
+
+.mainAboutUs {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.mainAboutTitle {
+  font-size: 2.5rem;
+  color: transparent;
+  padding-bottom: 30px;
+  background: linear-gradient(to right, #ffa500, #ffc107);
+  -webkit-background-clip: text;
+  background-clip: text;
 }

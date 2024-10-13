@@ -1,5 +1,5 @@
 "use client";
-import styles from "../wok/wok.module.css";
+import styles from "./wok.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -30,55 +30,57 @@ const WokPage = () => {
   };
 
   return (
-    <div className="container-xxl py-5">
-      <div className="container">
-        <div className="p-3 pb-md-4 mx-auto text-center">
-          <h1
-            className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
-          >
-            炒鍋
-          </h1>
-          <div className="container overflow-hidden">
-            <div className="row gy-5">
-              <div className="mb-3">
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    className="btn btn-outline-light me-2 my-2"
-                    onClick={() => filterProducts(category)}
-                  >
-                    {category}
-                  </button>
-                ))}
+    <>
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="p-3 pb-md-4 mx-auto text-center">
+            <h1
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
+            >
+              炒鍋
+            </h1>
+            <div className="container overflow-hidden">
+              <div className="row gy-5">
+                <div className="mb-3">
+                  {categories.map((category) => (
+                    <button
+                      key={category}
+                      className="btn btn-outline-light me-2 my-2"
+                      onClick={() => filterProducts(category)}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="row mt-5">
-              {filteredProducts.map((product) => (
-                <div
-                  className="col-lg-3 col-md-4 col-sm-6 mb-4"
-                  key={product.src}
-                >
-                  <div className="card">
-                    <Image
-                      src={`/images/wok/${product.src}`}
-                      className="card-img-top img-fluid"
-                      alt={product.title}
-                      width={500}
-                      height={300}
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">{product.title}</h5>
-                      <p className="card-text">{product.description}</p>
-                      <p className="card-text text-danger">{product.price}</p>
+              <div className="row mt-5">
+                {filteredProducts.map((product) => (
+                  <div
+                    className="col-lg-3 col-md-4 col-sm-6 mb-4"
+                    key={product.src}
+                  >
+                    <div className="card">
+                      <Image
+                        src={`/images/wok/${product.src}`}
+                        className="card-img-top img-fluid"
+                        alt={product.title}
+                        width={500}
+                        height={300}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{product.title}</h5>
+                        <p className="card-text">{product.description}</p>
+                        <p className="card-text text-danger">{product.price}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

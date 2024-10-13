@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import styles from "./distribution.module.css";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
@@ -20,11 +20,13 @@ const ProductDistribution = () => {
   }
 
   return (
-    <div>
+    <>
       <div className="container-xxl py-5">
         <div className="container">
-          <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-6 pt-5 fw-normal text-light">分銷店位置</h1>
+          <div className="p-3 pb-md-4 mx-auto text-center">
+            <h1 className={`display-6 fw-normal text-light ${styles.section}`}>
+              分銷店位置
+            </h1>
           </div>
           <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div className="col d-flex align-items-start">
@@ -167,7 +169,7 @@ const ProductDistribution = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../about/about.module.css";
+import styles from "./about.module.css";
 import Image from "next/image";
 import about_01 from "../../../public/about_01.jpg";
 import about_02 from "../../../public/about_02.jpg";
@@ -9,12 +9,12 @@ import about_05 from "../../../public/about_05.jpg";
 
 const About = () => {
   return (
-    <div>
+    <>
       <div className="container-xxl py-5">
         <div className="container">
-          <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <div className="p-3 pb-md-4 mx-auto text-center">
             <h1
-              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
             >
               關於美亞
             </h1>
@@ -171,7 +171,7 @@ const About = () => {
           </section>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

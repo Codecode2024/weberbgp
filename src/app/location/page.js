@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
-import styles from "../location/location.module.css";
+import styles from "./location.module.css";
 import Accordion from "react-bootstrap/Accordion";
 
 const Location = () => {
   return (
-    <div className={styles.section}>
+    <>
       <div className="container-xxl py-5">
         <div className="container">
           <div className="p-3 pb-md-4 mx-auto text-center">
             <h1
-              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
             >
               美亞廚具旗艦店位置
             </h1>
@@ -62,7 +62,7 @@ const Location = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

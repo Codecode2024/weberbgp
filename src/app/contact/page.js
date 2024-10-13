@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../contact/contact.module.css";
+import styles from "./contact.module.css";
 import {
   BsFillGeoFill,
   BsFillTelephoneFill,
@@ -10,12 +10,12 @@ import {
 
 const Contact = () => {
   return (
-    <div className={styles.sections}>
+    <>
       <div className="container-xxl py-5">
         <div className="container">
-          <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <div className="p-3 pb-md-4 mx-auto text-center">
             <h1
-              className={`display-6 fw-normal text-body-emphasis ${styles.headerTitle}`}
+              className={`display-6 fw-normal text-body-emphasis ${styles.section}`}
             >
               聯絡我們
             </h1>
@@ -186,7 +186,7 @@ const Contact = () => {
           </section>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

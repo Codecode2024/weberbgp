@@ -30,7 +30,7 @@ const ProductPage = () => {
           firstItem.classList.add("active");
         }
       }
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

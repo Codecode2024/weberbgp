@@ -142,7 +142,7 @@ const Header = () => {
                     <li>
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
-                        href="#"
+                        href="/inductionCookerWok"
                         onClick={handleNavLinkClick}
                       >
                         電磁爐鍋
@@ -151,7 +151,7 @@ const Header = () => {
                     <li>
                       <Link
                         className={`nav-link fs-5 ${styles.link_text}`}
-                        href="#"
+                        href="/openFireStove"
                         onClick={handleNavLinkClick}
                       >
                         明火爐及電磁爐鍋皆宜

@@ -1,12 +1,9 @@
 .section {
-  color: blue;
+  padding-top: 30px;
+  margin-top: 30px;
+  color: white !important;
 }
 
 .editmap {
   border: 0;
-}
-
-.headerTitle {
-  margin-top: 30px;
-  color: white !important;
 }

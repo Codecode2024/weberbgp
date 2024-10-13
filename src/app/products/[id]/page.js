@@ -48,7 +48,9 @@ const ProductDetail = ({ params }) => {
                     </h5>
                     <p className="card-text">{product.description}</p>
                     <p className="card-text">
-                      <strong className="text-danger">H${product.price}</strong>
+                      <strong className="text-danger">
+                        HK${product.price}
+                      </strong>
                     </p>
                   </div>
                 </div>
