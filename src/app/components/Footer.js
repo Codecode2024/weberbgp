@@ -1,5 +1,5 @@
 import React from "react";
-import { BsTwitter, BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitterX } from "react-icons/bs";
 import { GiSaucepan } from "react-icons/gi";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
             >
-              <BsTwitter width={24} height={24} />
+              <BsTwitterX width={24} height={24} />
             </Link>
           </li>
           <li className="ms-3">

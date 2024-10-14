@@ -9,7 +9,7 @@ const BlogpostCard = () => {
       <div className="d-flex justify-content-center">
         <div className="col-lg-8">
           <div className="card mb-4">
-            <Link href="#">
+            <Link href="../../blogpost">
               <Image
                 className="card-img-top img-fluid"
                 src="/recentnews1.jpg"
@@ -24,7 +24,7 @@ const BlogpostCard = () => {
               <p className="card-text">
                 廚房是現代家庭中最頻繁利用的空間之一，它的主要性不但表現在人們平時的飲食生活中，還表現在情感交換和家庭溝通上...
               </p>
-              <Link className="btn btn-primary" href="#">
+              <Link className="btn btn-primary" href="../../blogpost">
                 閱讀更多
               </Link>
             </div>

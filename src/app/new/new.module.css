@@ -1,0 +1,15 @@
+.carouselItems {
+  height: 60vh;
+}
+
+.carouselItemsImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .carouselItems {
+    height: 40vh;
+  }
+}

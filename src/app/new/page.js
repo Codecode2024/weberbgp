@@ -1,4 +1,5 @@
 "use client";
+import styles from "./new.module.css";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import imgA from "../../../public/images/dishwasher/dashwasher_01.jpg";
@@ -71,83 +72,83 @@ const ProductPage = () => {
         <div id="demo" className="carousel slide" data-bs-ride="carousel">
           {/* -- The slideshow/carousel -- */}
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className={`carousel-item active ${styles.carouselItems}`}>
               <Image
                 src={imgA}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgB}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgC}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgD}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgE}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgF}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgG}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgH}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
             </div>
-            <div className="carousel-item">
+            <div className={`carousel-item ${styles.carouselItems}`}>
               <Image
                 src={imgI}
                 alt="..."
-                className="d-block w-100"
+                className={`d-block w-100 ${styles.carouselItemsImage}`}
                 width={1288}
                 height={350}
               />
