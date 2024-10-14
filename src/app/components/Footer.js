@@ -10,12 +10,10 @@ const Footer = () => {
         <div className="col-md-4 d-flex align-items-center">
           <Link
             href="/"
-            className="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
+            className="me-2 mb-md-0 text-white text-decoration-none lh-1"
           >
             <GiSaucepan width={24} height={24} />
-            <span className="text-white mb-3 ms-1 mb-md-0">
-              © 2024 MEYER-旗艦店
-            </span>
+            <span className="text-white mb-3 ms-1 mb-md-0">© 2024 MEYER</span>
           </Link>
         </div>
 
