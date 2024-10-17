@@ -12,7 +12,7 @@ const BlogpostCard = () => {
             <Link href="../../blogpost">
               <Image
                 className="card-img-top img-fluid"
-                src="/recentnews1.jpg"
+                src="/images/mainpage/recentnews1.jpg"
                 alt="熟悉廚具與善用空間技巧"
                 width={900}
                 height={400}
@@ -35,7 +35,7 @@ const BlogpostCard = () => {
                 <Link href="#">
                   <Image
                     className="card-img-top img-fluid"
-                    src="/recentnews2.jpg"
+                    src="/images/mainpage/recentnews2.jpg"
                     alt="白米變可口大法"
                     width={700}
                     height={350}
@@ -56,7 +56,7 @@ const BlogpostCard = () => {
                 <Link href="#">
                   <Image
                     className="card-img-top img-fluid"
-                    src="/recentnews3.jpg"
+                    src="/images/mainpage/recentnews3.jpg"
                     alt="蛋尖的部分應如何擺放?"
                     width={700}
                     height={350}
@@ -79,7 +79,7 @@ const BlogpostCard = () => {
                 <Link href="#">
                   <Image
                     className="card-img-top img-fluid"
-                    src="/recentnews4.jpg"
+                    src="/images/mainpage/recentnews4.jpg"
                     alt="如何延長豆腐保存期?"
                     width={700}
                     height={350}
@@ -100,7 +100,7 @@ const BlogpostCard = () => {
                 <Link href="#">
                   <Image
                     className="card-img-top img-fluid"
-                    src="/recentnews5.jpg"
+                    src="/images/mainpage/recentnews5.jpg"
                     alt="雞肉不宜直接放冰箱保存"
                     width={700}
                     height={350}

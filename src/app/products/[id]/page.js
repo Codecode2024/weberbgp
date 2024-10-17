@@ -21,11 +21,24 @@ const ProductDetail = ({ params }) => {
   if (!product) return <p className="text-center m-5">Loading ...</p>;
 
   return (
-    <Card>
-      <div className="container-xxl py-5">
+    <Card style={{ border: "none" }}>
+      <div
+        className="container-xxl py-5"
+        style={{
+          background:
+            "linear-gradient(90deg,  rgba(178, 178, 178, 1) 0%, rgba(67, 67, 67, 1) 35%, rgba(7, 7, 7, 1) 100%)",
+        }}
+      >
         <div className="container">
           <div className="p-3 pb-md-4 m-auto text-center">
-            <h1 className="display-6 fw-normal text-body-emphasis pt-4">
+            <h1
+              className="display-6 fw-normal pt-4"
+              style={{
+                paddingTop: "30px",
+                marginTop: "30px",
+                color: "white",
+              }}
+            >
               產品詳情
             </h1>
             <div className="card mt-5 mb-5 m-auto" style={{ maxWidth: 940 }}>
@@ -46,7 +59,7 @@ const ProductDetail = ({ params }) => {
                     <h5 className="card-title text-center py-4">
                       {product.name}
                     </h5>
-                    <p className="card-text">{product.description}</p>
+                    <p className="card-text lh-lg">{product.description}</p>
                     <p className="card-text">
                       <strong className="text-danger">
                         HK${product.price}

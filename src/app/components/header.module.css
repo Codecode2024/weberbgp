@@ -4,7 +4,7 @@
     rgba(7, 7, 7, 1) 0%,
     rgba(76, 76, 76, 1) 35%,
     rgba(134, 134, 134, 1) 100%
-  ) !important;  
+  ) !important;
 }
 
 .link_text {
@@ -13,4 +13,5 @@
 }
 .dropdown_background {
   background: #8d8d8d !important;
+  width: 220px !important;
 }

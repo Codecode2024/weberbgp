@@ -1,0 +1,35 @@
+.section {
+  padding-top: 30px;
+  margin-top: 30px;
+  color: white !important;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.imgTop {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #ffffff !important;
+  padding: 10px;
+}
+
+.setPrice {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+}

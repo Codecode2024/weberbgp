@@ -5,7 +5,7 @@ const HeroImage = () => {
   return (
     <figure className="figure">
       <Image
-        src="/blogpost.jpg"
+        src="/images/mainpage/blogpost.jpg"
         className="figure-img img-fluid rounded"
         alt="blogpost"
         width={900}
