@@ -1,0 +1,15 @@
+.bg {
+  background: linear-gradient(
+    90deg,
+    rgba(178, 178, 178, 1) 0%,
+    rgba(67, 67, 67, 1) 35%,
+    rgba(7, 7, 7, 1) 100%
+  );
+  border: none;
+}
+
+.section {
+  padding-top: 30px;
+  margin-top: 30px;
+  color: white !important;
+}
