@@ -4,7 +4,7 @@ import styles from "./distribution.module.css";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-const Loading = dynamic(() => import("./loading"));
+const Loading = dynamic(() => import("./loading"), { ssr: false });
 
 const ProductDistribution = () => {
   const [loading, setLoading] = useState(true);

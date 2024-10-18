@@ -5,14 +5,19 @@ import styles from "./about.module.css";
 
 const AboutPage = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("/api/data.json");
       const json = await response.json();
       setData(json);
+      setLoading(false);
     };
     fetchData();
   }, []);
+  if (loading) {
+    return <div className="text-center">Loading...</div>;
+  }
   return (
     <div className="container my-5">
       <div className="container">
@@ -29,13 +34,15 @@ const AboutPage = () => {
             {index % 2 === 0 ? (
               <>
                 <div className="col-md-6">
-                  <Image
-                    src={item.image}
-                    className={`img-fluid object-fit-cover ${styles.imageConfig}`}
-                    alt={item.title}
-                    width={400}
-                    height={300}
-                  />
+                  <div style={{ minHeight: "300px" }}>
+                    <Image
+                      src={item.image}
+                      className={`img-fluid object-fit-cover ${styles.imageConfig}`}
+                      alt={item.title}
+                      width={400}
+                      height={300}
+                    />
+                  </div>
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="card">
@@ -57,13 +64,15 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <Image
-                    src={item.image}
-                    className={`img-fluid object-fit-cover ${styles.imageConfig}`}
-                    alt={item.title}
-                    width={400}
-                    height={300}
-                  />
+                  <div style={{ minHeight: "300px" }}>
+                    <Image
+                      src={item.image}
+                      className={`img-fluid object-fit-cover ${styles.imageConfig}`}
+                      alt={item.title}
+                      width={400}
+                      height={300}
+                    />
+                  </div>
                 </div>
               </>
             )}
